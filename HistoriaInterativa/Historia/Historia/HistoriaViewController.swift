@@ -72,13 +72,14 @@ class HistoriaViewController: UIViewController {
             Cenario(texto: "Você acorda novamente pensando estar atrasado, olha para seu celular e percebe que são 3:00. Você:", opcoes: ["Se questiona sobre o que aconteceu", "Começa a mexer no celular", "Tenta voltar a dormir, pois precisa acordar cedo"], imagemFundo: UIImage(named: "background-5")!, posicao: 8),
             Cenario(texto: "Você se lembra do sonho que teve. Você olha em direção da janela, mas dessa vez o vulto está no meio do quarto, mais perto da sua cama. Então você:", opcoes: ["Pensa ser uma paralisia do sono e tenta recobrar os movimentos", "Grita", "Pensa se tratar de um sonho bobo e decide ignorar"], imagemFundo: UIImage(named: "background-9")!, posicao: 9),
             Cenario(texto: "texto dinamico", opcoes: nil, imagemFundo: UIImage(), posicao: 10),
-            Cenario(texto: "A sombra vem na sua direção e você pensa em sair correndo do quarto. Ao tentar, algo te segura e você cai no chão. Então você acorda...", opcoes: nil, imagemFundo: UIImage(named: "background-7")!, posicao: 11),
+            Cenario(texto: "A sombra vem na sua direção e você pensa em sair correndo do quarto. Ao tentar, algo te segura e você cai no chão. Então você acorda...", opcoes: nil, imagemFundo: UIImage(named: "background-9")!, posicao: 11),
             Cenario(texto: "Você acorda suado, tudo foi um sonho e seu quarto está vazio. Você confere o celular e são 3:00. Depois do susto, voce vai:", opcoes: ["Ao banheiro lavar o rosto", "Pegar o celular e mandar mensagem para seu amigo contando o que aconteceu", "Tomar um copo d'água na cozinha"], imagemFundo: UIImage(named: "background-5")!, posicao: 12),
-            Cenario(texto: "Ao tentar, você não consegue se mexer e seu corpo começa a tremer como se estivesse tendo uma convulsão.", opcoes: nil, imagemFundo: UIImage(named: "background-10")!, posicao: 13),
-            Cenario(texto: "Você tenta chamar por ajuda e não consegue, e também lembra que não tem ninguém em casa.", opcoes: nil, imagemFundo: UIImage(named: "background-11")!, posicao: 14),
-            Cenario(texto: "Se debatendo, você cai no chão e percebe que tem alguém no canto do quarto, que começa a andar na sua direção. ", opcoes: nil, imagemFundo: UIImage(named: "background-12")!, posicao: 15),
-            Cenario(texto: "Você se desespera, tentando controlar seu corpo, sem sucesso. A pessoa chega mais perto a passos lentos, ela se abaixa para que possa ver seu rosto. Você percebe que o rosto da pessoa é idêntico ao seu! O desconhecido sussura em seu ouvido o que você mais temia ouvir em toda a sua vida. Você desmaia e só acorda novamente pela manhã, com seu despertador tocando.", opcoes: nil, imagemFundo: UIImage(named: "background-13")!, posicao: 16),
-            Cenario(texto: "texto dinamico", opcoes: nil, imagemFundo: UIImage(named: "background-5")!, posicao: 17)
+            Cenario(texto: "Ao tentar, você não consegue se mexer e seu corpo começa a tremer como se estivesse tendo uma convulsão. Você cai no chão.", opcoes: nil, imagemFundo: UIImage(named: "background-5")!, posicao: 13),
+            Cenario(texto: "Você tenta chamar por ajuda e não consegue, e também lembra que não tem ninguém em casa.", opcoes: nil, imagemFundo: UIImage(named: "background-10")!, posicao: 14),
+            Cenario(texto: "Percebe que tem alguém no canto do quarto, que começa a andar na sua direção. ", opcoes: nil, imagemFundo: UIImage(named: "background-11")!, posicao: 15),
+            Cenario(texto: "Você se desespera, tentando controlar seu corpo, sem sucesso. A pessoa chega mais perto a passos lentos, ela se abaixa para que possa ver seu rosto.", opcoes: nil, imagemFundo: UIImage(named: "background-12")!, posicao: 16),
+            Cenario(texto: "Você percebe que o rosto da pessoa é idêntico ao seu! O desconhecido sussura em seu ouvido o que você mais temia ouvir em toda a sua vida. Você desmaia e só acorda novamente pela manhã, com seu despertador tocando.", opcoes: nil, imagemFundo: UIImage(named: "background-13")!, posicao: 17),
+            Cenario(texto: "texto dinamico", opcoes: nil, imagemFundo: UIImage(named: "background-5")!, posicao: 18)
         ]
     }
     
@@ -94,7 +95,7 @@ class HistoriaViewController: UIViewController {
         switch posicao {
         case 1:
             cenarioAtivo.imagemFundo = criarImagemDinamica(para: posicao, comOpcao: opcao ?? 0)
-        case 5, 9, 16:
+        case 5, 9, 17:
             cenarioAtivo.texto = criarTextoDinamico(para: posicao, comOpcao: opcao ?? 0)
             cenarioAtivo.imagemFundo = criarImagemDinamica(para: posicao, comOpcao: opcao ?? 0)
         default: break
@@ -131,7 +132,7 @@ class HistoriaViewController: UIViewController {
                 return UIImage(named: "background-8")!
             default: return UIImage()
             }
-        case 16:
+        case 17:
             return UIImage(named: "background-5")!
         default: return UIImage()
         }
@@ -163,12 +164,12 @@ class HistoriaViewController: UIViewController {
                 return "Algo se move ao seus pés debaixo da coberta e começa a escalar seu corpo."
             default: return "texto dinamico"
             }
-        case 16:
+        case 17:
             switch pontuacao {
             case -2:
                 return "Você nunca mais foi o mesmo depois desse dia, quase não dorme mais e quando consegue, os mesmos sonhos horríveis se repetem sempre."
             case -1, 0, 1:
-                return "Você acorda no chão. Depois desse dia os sonhos nunca mais se repetiram, mas você não sabe dizer se foram somente sonhos. As vezes você tem a impressão de que alguem te observa das sombras."
+                return "Você acorda. Depois desse dia os sonhos nunca mais se repetiram, mas você não sabe dizer se foram somente sonhos. As vezes você tem a impressão de que alguem te observa das sombras."
             case 2:
                 return "Você passa a dormir bem depois de toda essa bagunça. Os sonhos nunca mais se repetiram e agora você tem uma ótima história de terror para contar para os seus amigos!"
             default: return "texto dinamico"
@@ -179,7 +180,7 @@ class HistoriaViewController: UIViewController {
     
     @objc func tocouNaTela(_ sender: Any?) {
         let opcao = (sender as? BotaoPadrao)?.tag
-        if cenarioAtivo.posicao != 17 {
+        if cenarioAtivo.posicao != 18 {
             avancarJogo(comOpcao: opcao)
             atualizarInterface()
         } else {

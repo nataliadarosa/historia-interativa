@@ -42,7 +42,7 @@
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXq-6J-Hc0">
                     <rect key="frame" x="35" y="674" width="344" height="168"/>
-                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                    <string key="text">Numa noite comum, após assistir um filme de terror, você está sozinho em casa e sons estranhos surgem em outro cômodo, você ignora porque tem prioridades maiores como ir dormir porque tem compromissos na dia seguinte. O que era pra ser só mais um noite, muda sua vida para sempre.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lzy-VG-117" secondAttribute="trailing" id="Em4-gY-vWw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pXq-6J-Hc0" secondAttribute="bottom" constant="20" id="PRj-um-cOa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pXq-6J-Hc0" secondAttribute="trailing" constant="35" id="Uge-uw-diM"/>
-                <constraint firstItem="vOm-mt-83X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="537" id="c09-bX-2qN"/>
+                <constraint firstItem="vOm-mt-83X" firstAttribute="top" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="537" id="c09-bX-2qN"/>
                 <constraint firstItem="vOm-mt-83X" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jd3-hP-GvO"/>
                 <constraint firstItem="pXq-6J-Hc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="q9p-mL-vRf"/>
                 <constraint firstAttribute="bottom" secondItem="lzy-VG-117" secondAttribute="bottom" id="qwQ-65-2Hx"/>
