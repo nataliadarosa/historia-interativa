@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoriaViewController" customModule="HistoriaInterativa" customModuleProvider="target">
+            <connections>
+                <outlet property="imagemFundo" destination="Oje-Ey-KyC" id="gm3-Jd-FwY"/>
+                <outlet property="primeiroBotao" destination="1tG-22-R2Q" id="fu3-V7-bSC"/>
+                <outlet property="segundoBotao" destination="AKV-p0-DwX" id="P21-yh-i9y"/>
+                <outlet property="terceiroBotao" destination="yGC-Ho-oIX" id="nAC-3M-bK3"/>
+                <outlet property="texto" destination="q9i-0R-Bgv" id="a2v-dA-Fpj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-Ey-KyC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eHE-s7-XKD">
+                    <rect key="frame" x="20" y="405" width="374" height="437"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrA-iF-eje" customClass="BoxPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="251"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9i-0R-Bgv">
+                                    <rect key="frame" x="30" y="30" width="314" height="191"/>
+                                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="q9i-0R-Bgv" firstAttribute="top" secondItem="ZrA-iF-eje" secondAttribute="top" constant="30" id="C1j-wv-Jkn"/>
+                                <constraint firstAttribute="bottom" secondItem="q9i-0R-Bgv" secondAttribute="bottom" constant="30" id="Mhq-mU-d5X"/>
+                                <constraint firstAttribute="trailing" secondItem="q9i-0R-Bgv" secondAttribute="trailing" constant="30" id="VW8-gf-Rge"/>
+                                <constraint firstItem="q9i-0R-Bgv" firstAttribute="leading" secondItem="ZrA-iF-eje" secondAttribute="leading" constant="30" id="geG-fS-iLe"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-22-R2Q" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="263" width="374" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="DiQ-Yr-1Hv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toquePrimeiroBotao:" destination="-1" eventType="touchUpInside" id="FpV-cv-g5V"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-p0-DwX" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="325" width="374" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toqueSegundoBotao:" destination="-1" eventType="touchUpInside" id="XJh-Em-hfM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGC-Ho-oIX" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="387" width="374" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toqueTerceiroBotao:" destination="-1" eventType="touchUpInside" id="y0d-Fn-D6M"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="yGC-Ho-oIX" firstAttribute="height" secondItem="AKV-p0-DwX" secondAttribute="height" id="3B5-nF-iYV"/>
+                        <constraint firstItem="AKV-p0-DwX" firstAttribute="height" secondItem="1tG-22-R2Q" secondAttribute="height" id="l5s-p7-Ryp"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="eHE-s7-XKD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="43O-cW-lro"/>
+                <constraint firstAttribute="bottom" secondItem="Oje-Ey-KyC" secondAttribute="bottom" id="5aZ-vl-B2g"/>
+                <constraint firstItem="eHE-s7-XKD" firstAttribute="top" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="450" id="UX5-C2-OPl"/>
+                <constraint firstItem="Oje-Ey-KyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cv4-Fg-EAc"/>
+                <constraint firstItem="Oje-Ey-KyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hny-pI-31U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eHE-s7-XKD" secondAttribute="bottom" constant="20" id="i4m-UP-EHd"/>
+                <constraint firstItem="eHE-s7-XKD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kGT-I8-Lk0"/>
+                <constraint firstItem="Oje-Ey-KyC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mb6-nK-SNt"/>
+            </constraints>
+            <point key="canvasLocation" x="-26.086956521739133" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
