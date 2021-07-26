@@ -24,13 +24,12 @@ class HistoriaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        reconhecerToque = UITapGestureRecognizer(target: self, action: #selector(tocouNaTela(_:)))
+        view.addGestureRecognizer(reconhecerToque)
         iniciar()
     }
     
     func iniciar() {
-        reconhecerToque = UITapGestureRecognizer(target: self, action: #selector(tocouNaTela(_:)))
-        view.addGestureRecognizer(reconhecerToque)
-        
         esconderOpcoes()
         cenariosPossiveis = criarCenariosPossiveis()
         cenarioAtivo = cenariosPossiveis.first!
@@ -69,7 +68,7 @@ class HistoriaViewController: UIViewController {
             Cenario(texto: "texto dinamico", opcoes: nil, imagemFundo: UIImage(systemName: "multiply")!, posicao: 4),
             Cenario(texto: "Após um dia difícil, você está em casa novamente. Alimenta seus animais, esquenta a comida que está na geladeira e faz uma rápida refeição. A louça se acumula na pia, mas você está cansado demais:", opcoes: ["Lavar mesmo assim", "Deixar para amanhã"], imagemFundo: UIImage(systemName: "multiply")!, posicao: 5),
             Cenario(texto: "Você acorda novamente pensando estar atrasado, olha para seu celular e percebe que são 3:00. Você:", opcoes: ["Se questiona sobre o que aconteceu", "Começa a mexer no celular", "Tenta voltar a dormir, pois precisa acordar cedo"], imagemFundo: UIImage(systemName: "multiply")!, posicao: 6),
-            Cenario(texto: "Você se lembra do sonho que teve na noite anterior. Você olha em direção da janela, mas dessa vez o vulto está no meio do quarto, mais perto da sua cama. Então você:", opcoes: ["Sabe que pode ser uma paralisia do sono e tenta usar estratégias para recobrar os movimentos", "Grita", "Pensa se tratar de um sonho bobo e decide ignorar"], imagemFundo: UIImage(systemName: "multiply")!, posicao: 7),
+            Cenario(texto: "Você se lembra do sonho que teve na noite anterior. Você olha em direção da janela, mas dessa vez o vulto está no meio do quarto, mais perto da sua cama. Então você:", opcoes: ["Pensa ser uma paralisia do sono e tenta recobrar os movimentos", "Grita", "Pensa se tratar de um sonho bobo e decide ignorar"], imagemFundo: UIImage(systemName: "multiply")!, posicao: 7),
             Cenario(texto: "texto dinamico", opcoes: nil, imagemFundo: UIImage(systemName: "multiply")!, posicao: 8),
             Cenario(texto: "A sombra vem na sua direção e você pensa em sair correndo do quarto. Ao tentar, algo te segura e você cai no chão. Então você acorda...", opcoes: nil, imagemFundo: UIImage(systemName: "multiply")!, posicao: 9),
             Cenario(texto: "Você acorda suado, tudo foi um sonho e seu quarto está vazio. Você confere o celular e são 3:00. Depois do susto, voce vai:", opcoes: ["Ao banheiro lavar o rosto", "Pegar o celular e mandar mensagem para seu amigo contando o que aconteceu", "Tomar um copo d'água na cozinha"], imagemFundo: UIImage(systemName: "multiply")!, posicao: 10),

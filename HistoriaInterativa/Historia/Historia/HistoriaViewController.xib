@@ -54,13 +54,13 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-22-R2Q" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-22-R2Q" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="263" width="374" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="DiQ-Yr-1Hv"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="DiQ-Yr-1Hv"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -73,10 +73,10 @@
                                 <action selector="toquePrimeiroBotao:" destination="-1" eventType="touchUpInside" id="FpV-cv-g5V"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-p0-DwX" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-p0-DwX" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="325" width="374" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -89,10 +89,10 @@
                                 <action selector="toqueSegundoBotao:" destination="-1" eventType="touchUpInside" id="XJh-Em-hfM"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGC-Ho-oIX" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yGC-Ho-oIX" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="387" width="374" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -128,6 +128,17 @@
             <point key="canvasLocation" x="-26.086956521739133" y="109.82142857142857"/>
         </view>
     </objects>
+    <designables>
+        <designable name="1tG-22-R2Q">
+            <size key="intrinsicContentSize" width="56" height="33"/>
+        </designable>
+        <designable name="AKV-p0-DwX">
+            <size key="intrinsicContentSize" width="56" height="33"/>
+        </designable>
+        <designable name="yGC-Ho-oIX">
+            <size key="intrinsicContentSize" width="56" height="33"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
