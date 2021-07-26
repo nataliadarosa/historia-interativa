@@ -18,6 +18,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela-final" translatesAutoresizingMaskIntoConstraints="NO" id="NNR-xk-Wzn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsT-cp-Jm4" customClass="BotaoPadrao" customModule="HistoriaInterativa" customModuleProvider="target">
                     <rect key="frame" x="41.5" y="616" width="331" height="59"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,8 +58,12 @@
                 <constraint firstItem="bsT-cp-Jm4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6nf-PU-DHs"/>
                 <constraint firstItem="yHu-e6-BRG" firstAttribute="top" secondItem="bsT-cp-Jm4" secondAttribute="bottom" constant="16" id="8zQ-0u-2so"/>
                 <constraint firstItem="yHu-e6-BRG" firstAttribute="height" secondItem="bsT-cp-Jm4" secondAttribute="height" id="9jF-YM-eVt"/>
+                <constraint firstItem="NNR-xk-Wzn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KJn-pK-WCH"/>
+                <constraint firstItem="NNR-xk-Wzn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qdq-K0-nEm"/>
                 <constraint firstItem="bsT-cp-Jm4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="aHN-qd-07X"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bsT-cp-Jm4" secondAttribute="bottom" constant="187" id="mYT-Ue-i0j"/>
+                <constraint firstAttribute="bottom" secondItem="NNR-xk-Wzn" secondAttribute="bottom" id="rHA-zS-XK7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NNR-xk-Wzn" secondAttribute="trailing" id="rKr-dh-QA2"/>
                 <constraint firstItem="yHu-e6-BRG" firstAttribute="centerX" secondItem="bsT-cp-Jm4" secondAttribute="centerX" id="yZx-e2-iNu"/>
             </constraints>
             <point key="canvasLocation" x="-25" y="141"/>
@@ -68,6 +75,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="tela-final" width="390" height="844"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

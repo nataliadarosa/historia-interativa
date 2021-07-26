@@ -10,7 +10,7 @@ import UIKit
 struct Cenario {
     var texto: String
     let opcoes: [String]?
-    let imagemFundo: UIImage
+    var imagemFundo: UIImage
     let posicao: Int
     
     static func comecar() -> Cenario {

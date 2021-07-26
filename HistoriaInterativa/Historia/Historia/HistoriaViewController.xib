@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-Ey-KyC">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-Ey-KyC">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                 </imageView>
@@ -118,12 +118,12 @@
             <constraints>
                 <constraint firstItem="eHE-s7-XKD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="43O-cW-lro"/>
                 <constraint firstAttribute="bottom" secondItem="Oje-Ey-KyC" secondAttribute="bottom" id="5aZ-vl-B2g"/>
-                <constraint firstItem="eHE-s7-XKD" firstAttribute="top" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="450" id="UX5-C2-OPl"/>
+                <constraint firstItem="eHE-s7-XKD" firstAttribute="top" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="600" id="UX5-C2-OPl"/>
                 <constraint firstItem="Oje-Ey-KyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cv4-Fg-EAc"/>
                 <constraint firstItem="Oje-Ey-KyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hny-pI-31U"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eHE-s7-XKD" secondAttribute="bottom" constant="20" id="i4m-UP-EHd"/>
                 <constraint firstItem="eHE-s7-XKD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kGT-I8-Lk0"/>
-                <constraint firstItem="Oje-Ey-KyC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mb6-nK-SNt"/>
+                <constraint firstItem="Oje-Ey-KyC" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="mb6-nK-SNt"/>
             </constraints>
             <point key="canvasLocation" x="-26.086956521739133" y="109.82142857142857"/>
         </view>

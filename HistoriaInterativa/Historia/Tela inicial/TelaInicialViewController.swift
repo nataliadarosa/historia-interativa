@@ -18,7 +18,8 @@ class TelaInicialViewController: UIViewController {
         let jogoController = HistoriaViewController()
         let navigationController = UINavigationController(rootViewController: jogoController)
         navigationController.navigationBar.isHidden = true
-        jogoController.modalPresentationStyle = .fullScreen
+        navigationController.modalPresentationStyle = .fullScreen
+
         present(navigationController, animated: true)
     }
     
